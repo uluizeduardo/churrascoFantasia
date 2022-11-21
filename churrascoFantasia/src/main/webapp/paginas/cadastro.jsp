@@ -15,7 +15,7 @@
   	<div class="title">
     	<h1>Cadastro de usuário</h1>
     </div>
-    <form action="<%= request.getContextPath() %>/login" method="post">
+    <form action="<%= request.getContextPath() %>" method="post">
     	<div class="mb-3">
 			<label for="exampleInputEmail1" class="form-label">Nome</label>
 			<input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required title="Digite seu nome">
@@ -30,6 +30,7 @@
 		</div>
 		<div class="d-grid gap-2">
 	 		<button class="btn btn-primary" type="submit">Cadastrar</button>
+	 		<a href="<%= request.getContextPath() %>"><h6 class="text-center">Já tenho conta</h6></a>
 		</div>
 	</form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
