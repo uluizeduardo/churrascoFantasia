@@ -15,7 +15,7 @@
   	<div class="title">
     	<h1>Churrasco Fantasia</h1>
     </div>
-    <form action="<%= request.getContextPath() %>/login" method="post">
+    <form action="<%= request.getContextPath() %>/entrada?acao=login" method="post">
 		<div class="mb-3">
 			<label for="exampleInputEmail1" class="form-label">CPF</label>
 			<input oninput="mascara(this)" type="text" class="form-control" id="cpf" name="cpf" placeholder="Digite seu cpf" maxlength="14" required title="Digite seu CPF">
